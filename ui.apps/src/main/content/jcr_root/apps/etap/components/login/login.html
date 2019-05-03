@@ -1,0 +1,23 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='summit.boot.foundation,etap.login'}"/>
+
+<form class="form-signin">
+      <img src="${properties.file}" alt="${properties.alt}" class="img-rounded">
+          
+<h2 class="form-signin-heading">${properties.title || "Please Enter Title"}</h2>
+  
+  
+<h4 class="form-signin-heading"><small>${properties.subheading || "Please enter sub heading"}</small></h4>
+
+        <label for="inputEmail" class="sr-only">User Name</label>
+        <input type="TEXT" id="userId" class="form-control" placeholder="User Name" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+ 
+
+ 
+        <button class="btn btn-lg btn-primary btn-block" id="loginButton" >Sign in</button>
+ 
+<div id="errordiv"></div>
+ 
+        <span><input type="hidden" id="url" value= "/bin/loginservlet" /></span>
+      </form>

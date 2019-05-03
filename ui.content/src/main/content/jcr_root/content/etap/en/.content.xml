@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    granite:loginPath="/content/etap/loginpage"
+    jcr:mixinTypes="[granite:AuthenticationRequired,rep:CugMixin]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2019-04-29T18:05:51.894+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2019-04-25T10:43:42.679+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Deactivate"
+        cq:template="/conf/etap/settings/wcm/templates/content-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="English"
+        jcr:uuid="bb56318a-eb8d-46ff-a387-151d5ff3638f"
+        sling:resourceType="etap/components/structure/page"
+        sling:target="/content/etap/en/login.html"
+        pageTitle="New Project"
+        redirectTarget="/content/etap/en/login"
+        socialMedia="[facebook]">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="What is Lorem Ipsum?"
+                    sling:resourceType="etap/components/content/title"/>
+                <text
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="etap/components/content/text"
+                    text="&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;br>&#xa;&lt;/p>&#xa;"
+                    textIsRich="true"/>
+                <image
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="etap/components/content/image"
+                    fileReference="/content/dam/etap/asset.jpg"/>
+                <list
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="etap/components/content/list"
+                    childDepth="1"
+                    linkItems="true"
+                    listFrom="static"
+                    pages="[/content/etap/en,/content/etap/fr]"
+                    showDescription="false"
+                    showModificationDate="false"
+                    sortOrder="asc"
+                    tagsMatch="any"/>
+                <carousel
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="etap/components/content/carousel"
+                    autoplay="false"
+                    delay="5000">
+                    <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="etap/components/content/image"
+                        fileReference="/content/dam/etap/asset.jpg"/>
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="etap/components/content/text"
+                        text="&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </carousel>
+                <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="etap/components/content/tabs">
+                    <item_1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab 1"
+                        sling:resourceType="wcm/foundation/components/responsivegrid">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="etap/components/content/image"
+                            fileReference="/content/dam/etap/asset.jpg"/>
+                    </item_1>
+                    <item_2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab 2"
+                        sling:resourceType="wcm/foundation/components/responsivegrid">
+                        <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="etap/components/content/text"
+                            text="&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xa;"
+                            textIsRich="true"/>
+                    </item_2>
+                </tabs>
+                <teaser
+                    jcr:description="&lt;p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xd;&#xa;"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Lorem Ipsum"
+                    sling:resourceType="etap/components/content/teaser"
+                    actionsEnabled="false"
+                    descriptionFromPage="false"
+                    fileReference="/content/dam/etap/asset.jpg"
+                    textIsRich="true"
+                    titleFromPage="false"/>
+                <helloworld
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="etap/components/content/helloworld"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="etap/components/form/container"
+                    action="/content/usergenerated/etap/en/cq-gen1506071823762/"
+                    actionType="foundation/components/form/actions/store">
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Lorem"
+                        sling:resourceType="etap/components/form/text"
+                        name="lorem"
+                        rows="2"
+                        type="text"/>
+                    <options
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Where does it come from?"
+                        sling:resourceType="etap/components/form/options"
+                        name="come-from"
+                        source="local"
+                        type="checkbox">
+                        <items jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                selected="false"
+                                text="A"
+                                value="a"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                selected="false"
+                                text="B"
+                                value="b"/>
+                        </items>
+                    </options>
+                    <button
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="etap/components/form/button"/>
+                </container>
+                <sharing
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="etap/components/content/sharing"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+    <rep:cugPolicy/>
+</jcr:root>
